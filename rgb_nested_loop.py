@@ -12,22 +12,22 @@ def main():
     )
 
     # define counters for red, green, and blue
-    counterRed = 0
-    counterGreen = 0
-    counterBlue = 0
+    counter_red = 0
+    counter_green = 0
+    counter_blue = 0
 
     # if the user wants to start, then begin the loops
     if start_RGB == "yes":
         # use a for loop to get all values for red
-        for counterRed in range(0, 256, 1):
+        for counter_red in range(0, 256, 1):
             # use a for loop to get all values for green
-            for counterGreen in range(0, 256, 1):
+            for counter_green in range(0, 256, 1):
                 # use a for loop to get all values for blue
-                for counterBlue in range(0, 256, 1):
+                for counter_blue in range(0, 256, 1):
                     # display colours
                     print(
                         "\033[38;2;{0};{1};{2}mRGB({0}, {1}, {2})\033[0m".format(
-                            counterRed, counterGreen, counterBlue
+                            counter_red, counter_green, counter_blue
                         )
                     )
     else:
